@@ -1,5 +1,4 @@
 import TileMap from "./TileMap.js";
-alert('efrefer');
 const tileSize = 32;
 const velocity = 2;
 

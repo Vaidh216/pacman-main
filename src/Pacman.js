@@ -96,12 +96,29 @@ export default class Pacman {
 
   #keydown = (event) => {
     //up
-    if (event.keyCode == 38) {
+    if (event.keyCode == 38 || event.touch == 38) {
       if (this.currentMovingDirection == MovingDirection.down)
         this.currentMovingDirection = MovingDirection.up;
       this.requestedMovingDirection = MovingDirection.up;
+
+
+
+
+
+
+
+
+      
       this.madeFirstMove = true;
     }
+
+
+
+
+
+
+
+
     //down
     if (event.keyCode == 40) {
       if (this.currentMovingDirection == MovingDirection.up)
